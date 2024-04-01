@@ -1,0 +1,8 @@
+# Ignorar carpetas
+requests/
+node_modules/
+.idea/
+
+# Ignorar archivos
+package-lock.json
+.env
