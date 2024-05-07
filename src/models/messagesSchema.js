@@ -1,5 +1,6 @@
 const { ObjectId } = require('mongodb');
 const mongoose = require('mongoose');
+const { Mixed } = mongoose.Schema.Types;
 
 const messagesSchema = mongoose.Schema({
     conversation_id: {
@@ -13,7 +14,7 @@ const messagesSchema = mongoose.Schema({
         ref: 'Users',
     },
     content: {
-        type: String,
+        type: Mixed,
         required: true,
     },
     time: {
