@@ -8,9 +8,11 @@ const groupRoutes = require('./routes/group');
 const conversationsRoutes = require('./routes/conversations');
 const messahesRoutes = require('./routes/messages');
 const logger = require('morgan')
+const cors = require('cors');
 
 
 const app = express();
+app.use(cors());
 app.use(logger('dev'));
 const port = process.env.port || 3000;
 
